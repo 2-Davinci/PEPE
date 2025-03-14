@@ -44,7 +44,7 @@ const Hero = () => {
                      <img src={Icon4} alt=""  className='w-8 '  />
             <img src={Icon3} alt=""  className='w-8'  />
         <img src={Icon1} alt="" className='w-8' />
-        <img src={Icon2} alt=""  className='w-'  />
+        <img src={Icon2} alt=""  className='w-10'  />
         
             </div>
             </div>
