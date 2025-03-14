@@ -3,6 +3,7 @@ import './App.css';
 import About from './components/About/About';
 import Body from './components/Body/Body';
 import Home from './components/Home/Home';
+import Tokenomics from './components/Tokenomics/Tokenomics';
 function App() {
   return (
     <div className='  scroll-smooth bg-[#067c25] flex flex-col justify-center  gap-4'>
@@ -20,9 +21,10 @@ function App() {
    </marquee>
    </div>
    <About/>
-   <div className='bg-white h-[100vh] '>
+   <div className='bg-white '>
     <Body/>
    </div>
+   <Tokenomics/>
     </div>
   );
 }

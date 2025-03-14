@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <div className=' flex flex-col md:flex-row justify-evenly items-center  h-[100vh]  py-10 px-20 '>
         {/* Desc */}
-        <div className='flex justify-center my-2 items-center '>
+        <div className='flex justify-center my-2 items-center w-full '>
             <div className='flex justify-center items-center'>
             <div className='flex gap-4 flex-col '>
             <div className=' uppercase text-[40px] md:text-[55px] text-white font-extrabold md:gap-0 gap-5'>
