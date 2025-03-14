@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HeroImg from "../../assets/Hero.png"
 import Icon1 from "../../assets/icon1.svg"
 import Icon2 from "../../assets/icon2.svg"
 import Icon3 from "../../assets/icon3.svg"
 import Icon4 from "../../assets/icon4.png"
 const Hero = () => {
+    const [text, setText] = useState("This is copied text!");
+    const [copied, setCopied] = useState(false);
+    const handleCopy = async () => {
+        try {
+          await navigator.clipboard.writeText(text);
+          setCopied(true);
+          setTimeout(() => setCopied(false), 2000); // Reset after 2 sec
+        } catch (err) {
+          console.error("Failed to copy:", err);
+        }
+      };
   return (
     <div className=' flex justify-between p-10 '>
         {/* Desc */}
@@ -18,10 +29,14 @@ const Hero = () => {
                 The most memorable memecoin in existence. The dogs have had their way. It's time for PEPE to take reign 
             </div>
            <div className='bg-white w-[70%] flex  p-1 rounded-[8px] '>
-            <input type="text" className=' border-0 outline-none w-full py-2 px-5 ' />
-            <button className='bg-[#089B2E]  text-white py-2 px-4 rounded-[5px] '>
+            <input type="text" className=' border-0 outline-none w-full py-2 px-5 '  value={text} 
+        onChange={(e) => setText(e.target.value)} />
+            <button onClick={handleCopy} className='bg-[#089B2E]  text-white py-2 px-4 rounded-[5px] '>
                 COPY
             </button>
+            <p className='text-white '>
+           
+            </p>
            </div>
            {/* Icon */}
             <div className='flex  items-center gap-5'>
