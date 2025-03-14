@@ -17,18 +17,19 @@ const Hero = () => {
         }
       };
   return (
-    <div className=' flex justify-between p-10 '>
+    <div className=' flex flex-col md:flex-row justify-evenly items-center  h-[100vh]  py-10 px-20 '>
         {/* Desc */}
         <div className='flex justify-center my-2 items-center '>
+            <div className='flex justify-center items-center'>
             <div className='flex gap-4 flex-col '>
-            <div className=' uppercase text-[40px] md:text-[55px] text-white font-extrabold md:gap-0 gap-5 '>
-                <span>$UNO</span>
+            <div className=' uppercase text-[40px] md:text-[55px] text-white font-extrabold md:gap-0 gap-5'>
+                <span className=' -space-x-5'>$UNO</span>
                 <span> PEPE</span>
             </div>
             <div className='w-[55%] text-white'>
                 The most memorable memecoin in existence. The dogs have had their way. It's time for PEPE to take reign 
             </div>
-           <div className='bg-white w-[70%] flex  p-1 rounded-[8px] '>
+           <div className='bg-white w-[70%] flex  p-1 '>
             <input type="text" className=' border-0 outline-none w-full py-2 px-5 '  value={text} 
         onChange={(e) => setText(e.target.value)} />
             <button onClick={handleCopy} className='bg-[#089B2E]  text-white py-2 px-4 rounded-[5px] '>
@@ -39,7 +40,7 @@ const Hero = () => {
             </p>
            </div>
            {/* Icon */}
-            <div className='flex  items-center gap-5'>
+            <div className='flex  items-center gap-5 '>
                      <img src={Icon4} alt=""  className='w-8 '  />
             <img src={Icon3} alt=""  className='w-8'  />
         <img src={Icon1} alt="" className='w-8' />
@@ -47,6 +48,8 @@ const Hero = () => {
         
             </div>
             </div>
+            </div>
+           
            
         </div>
         {/* Img */}
