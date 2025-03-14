@@ -32,7 +32,7 @@ const Hero = () => {
             <input type="text" className=' border-0 outline-none w-full py-2 px-5 '  value={text} 
         onChange={(e) => setText(e.target.value)} />
             <button onClick={handleCopy} className='bg-[#089B2E]  text-white py-2 px-4 rounded-[5px] '>
-                COPY
+            {copied ? "Copied" : " Copy"}
             </button>
             <p className='text-white '>
            
