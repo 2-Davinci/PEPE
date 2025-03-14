@@ -26,11 +26,11 @@ const Hero = () => {
                 <span className=' -space-x-5'>$UNO</span>
                 <span> PEPE</span>
             </div>
-            <div className='w-[55%] text-white'>
+            <div className='md:w-[55%] w-full text-white'>
                 The most memorable memecoin in existence. The dogs have had their way. It's time for PEPE to take reign 
             </div>
-           <div className='bg-white w-[70%] flex  p-1 '>
-            <input type="text" className=' border-0 outline-none w-full py-2 px-5 '  value={text}  readOnly
+           <div className='bg-white md:w-[70%] w-[100%] flex  p-1 '>
+            <input type="text" className=' border-0 outline-none w-full py-2 px-5 '  value={text}  readOnly 
         onChange={(e) => setText(e.target.value)} />
             <button onClick={handleCopy} className='bg-[#089B2E]  text-white py-2 px-4 rounded-[5px] '>
             {copied ? "Copied" : " Copy"}
@@ -44,7 +44,7 @@ const Hero = () => {
                      <img src={Icon4} alt=""  className='w-8 '  />
             <img src={Icon3} alt=""  className='w-8'  />
         <img src={Icon1} alt="" className='w-8' />
-        <img src={Icon2} alt=""  className='w-8'  />
+        <img src={Icon2} alt=""  className='w-'  />
         
             </div>
             </div>
@@ -53,7 +53,7 @@ const Hero = () => {
            
         </div>
         {/* Img */}
-        <div>
+        <div className='pr-5'>
             <img src={HeroImg} alt="" />
         </div>
     </div>

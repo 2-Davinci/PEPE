@@ -2,6 +2,7 @@
 import './App.css';
 import About from './components/About/About';
 import Body from './components/Body/Body';
+import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Tokenomics from './components/Tokenomics/Tokenomics';
 function App() {
@@ -10,7 +11,7 @@ function App() {
    <Home/>
    <div className='  font-medium py-3 bg-white text-black'>
    <marquee >
-    <div className='flex justify-between'>
+    <div className='flex justify-between gap-5'>
       <div>BUY $UNO PEPE</div>
       <div>BUY $UNO PEPE</div>
       <div>BUY $UNO PEPE</div>
@@ -25,6 +26,7 @@ function App() {
     <Body/>
    </div>
    <Tokenomics/>
+    <Footer/>
     </div>
   );
 }
