@@ -30,7 +30,7 @@ const Hero = () => {
                 The most memorable memecoin in existence. The dogs have had their way. It's time for PEPE to take reign 
             </div>
            <div className='bg-white w-[70%] flex  p-1 '>
-            <input type="text" className=' border-0 outline-none w-full py-2 px-5 '  value={text} 
+            <input type="text" className=' border-0 outline-none w-full py-2 px-5 '  value={text}  readOnly
         onChange={(e) => setText(e.target.value)} />
             <button onClick={handleCopy} className='bg-[#089B2E]  text-white py-2 px-4 rounded-[5px] '>
             {copied ? "Copied" : " Copy"}
