@@ -6,8 +6,8 @@ const Tokenomics = () => {
       <div className='flex flex-col justify-center items-center'>
       <h2 className='flex items-center text-white text-[30px] font-extrabold  my-5'>Tokenomics</h2>
       <div className='flex justify-evenly items-center flex-col-reverse md:flex-row md:gap-10 gap-3'>
-        <div>
-        <img src={frame22} alt="" />
+        <div className=' justify-center flex items-center'>
+        <img src={frame22} alt="" className='w-1/2 md:w-full' />
         </div>
 
     <div>
