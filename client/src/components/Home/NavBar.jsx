@@ -10,9 +10,9 @@ const NavBar = () => {
         {/* Link */}
         <div className='hidden md:flex  md:justify-between items-center gap-4 font-medium '>
             <a href="#about"> About</a>
-            <a href="#about"> How To buy</a>
-            <a href="#about"> Tokenomics</a>
-            <a href="#about"> Roadmap</a>
+            <a href="#Howtobuy"> How To buy</a>
+            <a href="#tokenomics"> Tokenomics</a>
+            <a href="#roadmap"> Roadmap</a>
         </div>
         {/* Button */}
         <div>

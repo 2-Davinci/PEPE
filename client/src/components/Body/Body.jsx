@@ -2,7 +2,7 @@ import React from 'react'
 
 const Body = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-6  my-20 '>
+    <div id='Howtobuy' className='flex flex-col justify-center items-center gap-6  my-20 '>
         <h2 className='text-[#089B2E] text-[35px]  space-x-5 font-extrabold'>How to Buy</h2>
         <div className='flex justify-center items-center flex-col md:w-1/2 w-full mx-2 gap-5 '>
             <div className='flex flex-col  items-center justify-center bg-[#033e12] opacity-[1.1]  p-3 text-white rounded-tl-[5px]     rounded-br-[5px] border-b-[4px] border-[#089B2E] ' >

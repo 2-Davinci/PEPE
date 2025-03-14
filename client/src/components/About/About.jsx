@@ -2,7 +2,7 @@ import React from 'react'
 import Image1 from "../../assets/image 1.png"
 const About = () => {
   return (
-    <div className=' flex justify-evenly items-center h-[100vh] flex-col-reverse md:flex-row'>
+    <div id='about' className=' flex justify-evenly items-center h-[100vh] flex-col-reverse md:flex-row'>
       <div>
         <img src={Image1} alt="" />
       </div>
